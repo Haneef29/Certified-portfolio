@@ -328,7 +328,7 @@ p{
     background-image: url(./download.jpg);
 }
 #services .service-item.first{
-    background-image: url(./download.jpg);
+    background-image: url(./iron\ and\ press.jpg);
     /* overflow: hidden; */
 }
 #services .service-item img{
@@ -346,7 +346,7 @@ p{
     transform: scale(1.1);
 }
 #services .service-item.second{
-    background-image: url(./garden.jpg);
+    background-image: url(./wash\ and\ fold.jpg);
 }
 
 
