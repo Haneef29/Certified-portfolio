@@ -189,8 +189,11 @@ p{
 
 /* Hero section */
 #hero{
+    /* background:  #262626; */
     background-image: url(./download.jpg);
     background-size: cover;
+    filter: grayscale(2);
+    transition: .5s ease filter;
     background-position:  center;
     position: relative;
     z-index: 1;
@@ -203,7 +206,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .8;
     z-index: -1;
 }
 #hero .hero{
@@ -215,7 +218,7 @@ p{
 #hero h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -321,7 +324,9 @@ p{
     color: white;
     transition: transform .5s ease;
 }
-
+#services .service-item.zero{
+    background-image: url(./download.jpg);
+}
 #services .service-item.first{
     background-image: url(./iron\ and\ press.jpg);
     /* overflow: hidden; */
@@ -330,12 +335,10 @@ p{
     border-radius: 10px;
     transition: transform .5s ease;
 }
-.first img{
+.service-item img{
     height: 200px;
 }
-.second img{
-    height: 200px;
-}
+
 #services .service-item .lower{
     margin: 20px ;
 }
@@ -384,7 +387,73 @@ p{
 }
 /* End service section */
 
+/* -------convinience section------- */
+#convinience .convinience{
+    max-width: 1500px;
+    margin: 0 auto;
+    /* text-align: center; */
+    padding: 100px ;
+}
+#convinience .price-list{
+   text-align: center;
+}
+#convinience .price-list p{
+    text-align: center;
+}
+.convinience .section-title span{
+    color: orange;
+}
+#convinience .section-title{
+    font-size: 5rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#convinience .section-sub-title{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.convinience-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.convinience-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.convinience-list div  i{
+    font-size: 50px;
+    margin-bottom: 30px; 
+}
+.convinience-list div h2{
+    font-display: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.convinience-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.convinience-list div:hover{
+    background: orange;
+   
+    transform: translateY(-10px);
+}
 
+/* -------End convinience section------- */
 
 /* contact section */
 #contact .contact{
@@ -394,6 +463,9 @@ p{
 }
 #contact .contact .section-title{
     color: #fff;
+}
+#contact .contact .section-title span{
+    color: orange;
 }
 #contact .contact-items{
     width: 100%;
@@ -546,7 +618,7 @@ filter: grayscale(0);
 
     /* hero */
     #hero h1{
-        font-size: 7rem;
+        font-size: 2rem;
     }
     /* End hero */
 
@@ -662,6 +734,11 @@ filter: grayscale(0);
         display: none;
     }
     /* end header */
+    /* Hero section */
+    #hero h1{
+        font-size: 4rem;
+    }
+    /* End Hero */
     #service .service-bottom .service-item{
         flex-basis: 23%;
         margin: 1.5%;
